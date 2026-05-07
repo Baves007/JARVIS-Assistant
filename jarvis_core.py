@@ -52,30 +52,20 @@ except ImportError:
     print("[WARN] pyautogui not installed. Run: pip install pyautogui pillow")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-#  ✏️  CONFIGURATION — Edit these values before running
-# ══════════════════════════════════════════════════════════════════════════════
+
 
 WAKE_WORD   = "hey jarvis"
 USER_NAME   = "Bhavish"             # 👈 Change to your name
 DEFAULT_CITY = "Chennai"             # 👈 Change to your city for weather
 
 # ── Groq API (free at https://console.groq.com) ────────────────────────────
-GROQ_API_KEY = "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"
-# 👆 PASTE your Groq key above between the quotes like:
-# GROQ_API_KEY = "gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+GROQ_API_KEY = "GROQ_API_KEY"
 
-# ── Groq model — choose one ────────────────────────────────────────────────
-# "llama3-8b-8192"     → Fastest,  great for quick voice responses  ⚡ (recommended)
-# "llama3-70b-8192"    → Smarter,  better for complex questions      🧠
-# "mixtral-8x7b-32768" → Long ctx, good for long conversations       📚
-# "gemma2-9b-it"       → Balanced, solid all-rounder                 🎯
 GROQ_MODEL = "llama3-8b-8192"
 
 # ── Weather API (free at https://openweathermap.org/api) ───────────────────
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY", "")
-# 👆 PASTE your OpenWeatherMap key here like:
-# WEATHER_API_KEY = "abcdef1234567890abcdef1234567890"
+
 
 # ── Music folder ───────────────────────────────────────────────────────────
 MUSIC_FOLDER = os.path.expanduser("~/Music")   # change path if needed
